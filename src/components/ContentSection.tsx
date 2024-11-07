@@ -11,7 +11,7 @@ import fisheye from "../assets/mobile/image-fisheye.jpg"
 export default function ContentSection() {
   return (
     <>
-      <div className="flex flex-col items-center justify-center mt-44 px-12 ">
+      <div className="flex flex-col items-center justify-center px-12 ">
         <img
           className="object-cover mb-16"
           src={vrImage}

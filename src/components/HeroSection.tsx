@@ -15,7 +15,7 @@ export default function HeroSection() {
         className="absolute inset-0 object-cover"
       />
       <div className="relative z-10 flex flex-col items-center h-full px-6 text-center text-white">
-        <div className="absolute top-0 left-0 w-full p-12 flex justify-between items-center">
+        <div className="absolute top-0 left-0 w-full p-8 flex justify-between items-center">
           <a href="/">
             <img src={logo} alt="logo" />
           </a>
