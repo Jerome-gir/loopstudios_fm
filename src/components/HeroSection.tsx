@@ -29,9 +29,9 @@ export default function HeroSection() {
             onClick={() => setOpen(!open)}
           />
         </div>
-        <div className="flex flex-col justify-center items-start flex-1 px-6">
-          <h1 className="text-6xl border-2 font-Josefin_Sans uppercase p-8 text-left tracking-wide">
-            Immersive Experiences That{" "}
+        <div className="flex flex-col justify-center items-start flex-1 px-12">
+          <h1 className="text-5xl border-2 font-Josefin_Sans uppercase p-6 text-left tracking-wide">
+            Immersive Experiences That
             <span className="flex flex-col">Deliver</span>
           </h1>
         </div>
