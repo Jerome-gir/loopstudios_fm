@@ -1,4 +1,5 @@
-import hero from "../assets/mobile/image-hero.jpg"
+import HeroMobileImage from "../assets/mobile/image-hero.jpg"
+import HeroDesktopImage from "../assets/desktop/image-hero.jpg"
 import HamburgerMenu from "../assets/icon-hamburger.svg"
 import logo from "../assets/logo.svg"
 import iconClose from "../assets/icon-close.svg"
@@ -10,29 +11,50 @@ export default function HeroSection() {
   return (
     <section className="relative h-screen">
       <img
-        src={hero}
+        src={HeroMobileImage}
         alt="Hero section"
-        className="absolute inset-0 object-cover"
+        className="absolute inset-0 object-cover sm:hidden"
       />
-      <div className="relative z-10 flex flex-col items-center h-full px-6 text-center text-white">
-        <div className="absolute top-0 left-0 w-full p-8 flex justify-between items-center">
+      <img
+        src={HeroDesktopImage}
+        alt="Hero section"
+        className="absolute inset-0 object-cover w-full hidden sm:block"
+      />
+      <div className="relative z-10 flex flex-col items-center h-full px-6 text-center text-white sm:items-start sm:px-20">
+        <div className="absolute top-0 left-0 w-full p-8 flex justify-between items-center sm:p-32">
           <a href="/">
-            <img src={logo} alt="logo" />
+            <img className="sm:w-80" src={logo} alt="logo" />
           </a>
-
           <img
-            className={`${open ? "hidden" : "block cursor-pointer"}`}
+            className={`sm:hidden ${open ? "hidden" : "block cursor-pointer"}`}
             src={HamburgerMenu}
             width={24}
             height={16}
             alt="menu hamburger"
             onClick={() => setOpen(!open)}
           />
+          <ul className="hidden sm:flex gap-10 text-xl font-Alata">
+            <a href="/">
+              <li>About</li>
+            </a>
+            <a href="/">
+              <li>Careers</li>
+            </a>
+            <a href="/">
+              <li>Events</li>
+            </a>
+            <a href="/">
+              <li>Products</li>
+            </a>
+            <a href="/">
+              <li>Support</li>
+            </a>
+          </ul>
         </div>
         <div className="flex flex-col justify-center items-start flex-1 px-12">
-          <h1 className="text-5xl border-2 font-Josefin_Sans uppercase p-6 text-left tracking-wide">
-            Immersive Experiences That
-            <span className="flex flex-col">Deliver</span>
+          <h1 className="text-5xl border-2 font-Josefin_Sans uppercase p-6 text-left tracking-wide sm:text-8xl sm:h-96 sm:p-12 sm:border-4">
+            <span className="sm:flex sm:flex-col">Immersive</span> Experiences
+            <span className="flex flex-col">That Deliver</span>
           </h1>
         </div>
 
