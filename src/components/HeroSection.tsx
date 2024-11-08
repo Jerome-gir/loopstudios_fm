@@ -13,27 +13,27 @@ export default function HeroSection() {
       <img
         src={HeroMobileImage}
         alt="Hero section"
-        className="absolute inset-0 object-cover sm:hidden"
+        className="absolute inset-0 object-cover md:hidden"
       />
       <img
         src={HeroDesktopImage}
         alt="Hero section"
-        className="absolute inset-0 object-cover w-full hidden sm:block"
+        className="absolute inset-0 object-cover w-full hidden md:block"
       />
-      <div className="relative z-10 flex flex-col items-center h-full px-6 text-center text-white sm:items-start sm:px-20">
-        <div className="absolute top-0 left-0 w-full p-8 flex justify-between items-center sm:p-32">
+      <div className="relative z-10 flex flex-col items-center h-full px-6 text-center text-white md:items-start md:px-20">
+        <div className="absolute top-0 left-0 w-full p-8 flex justify-between items-center md:p-32">
           <a href="/">
-            <img className="sm:w-80" src={logo} alt="logo" />
+            <img className="md:w-80" src={logo} alt="logo" />
           </a>
           <img
-            className={`sm:hidden ${open ? "hidden" : "block cursor-pointer"}`}
+            className={`md:hidden ${open ? "hidden" : "block cursor-pointer"}`}
             src={HamburgerMenu}
             width={24}
             height={16}
             alt="menu hamburger"
             onClick={() => setOpen(!open)}
           />
-          <ul className="hidden sm:flex gap-10 text-xl font-Alata">
+          <ul className="hidden md:flex gap-10 text-xl font-Alata">
             <a href="/">
               <li>About</li>
             </a>
@@ -52,8 +52,8 @@ export default function HeroSection() {
           </ul>
         </div>
         <div className="flex flex-col justify-center items-start flex-1 px-12">
-          <h1 className="text-5xl border-2 font-Josefin_Sans uppercase p-6 text-left tracking-wide sm:text-8xl sm:h-96 sm:p-12 sm:border-4">
-            <span className="sm:flex sm:flex-col">Immersive</span> Experiences
+          <h1 className="text-5xl border-2 font-Josefin_Sans uppercase p-6 text-left tracking-wide md:text-8xl md:h-96 md:p-12 md:border-4">
+            <span className="md:flex md:flex-col">Immersive</span> Experiences
             <span className="flex flex-col">That Deliver</span>
           </h1>
         </div>
