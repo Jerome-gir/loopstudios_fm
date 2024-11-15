@@ -24,7 +24,7 @@ export default function CreationsSection() {
           our creations
         </h2>
         <a href="/">
-          <button className="hidden md:block uppercase text-xl border-2 px-12 py-2 font-Alata tracking-widest mb-12 md:mb-16 hover:bg-black hover:text-white">
+          <button className="hidden md:block uppercase text-xl border-2 px-12 py-2 font-Alata tracking-widest mb-12 md:mb-16 transition duration-500 hover:bg-black hover:text-white">
             see all
           </button>
         </a>
@@ -32,130 +32,130 @@ export default function CreationsSection() {
 
       <div className="md:flex md:justify-center">
         <div className="px-6 grid grid-cols-1 gap-6 md:grid-cols-4 md:grid-rows-2 md:mb-44 md:px-0">
-          <div className="relative">
+          <div className="relative group">
             <img
               className="block md:hidden object-cover border cursor-pointer"
               src={deepEarth}
               alt="galerie d'images"
             />
             <img
-              className="hidden md:block object-cover border cursor-pointer"
+              className="hidden md:block object-cover border cursor-pointer transition duration-700 group-hover:opacity-35"
               src={deepEarthDesktop}
               alt="galerie d'images"
             />
-            <div className="absolute bottom-0 left-0 uppercase font-thin w-24 text-white p-8 text-2xl md:text-3xl">
+            <div className="absolute bottom-0 left-0 uppercase font-thin w-24 text-white p-8 text-2xl md:text-3xl transition-colors duration-700 group-hover:text-black">
               deep earth
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative group">
             <img
               className="block md:hidden object-cover border cursor-pointer"
               src={nightArcade}
               alt="galerie d'images"
             />
             <img
-              className="hidden md:block object-cover border cursor-pointer"
+              className="hidden md:block object-cover border cursor-pointer transition duration-700 hover:opacity-35"
               src={nightArcadeDesktop}
               alt="galerie d'images"
             />
-            <div className="absolute bottom-0 left-0 uppercase font-thin w-24 text-white p-8 text-2xl md:text-3xl">
+            <div className="absolute bottom-0 left-0 uppercase font-thin w-24 text-white p-8 text-2xl md:text-3xl transition-colors duration-700 group-hover:text-black">
               night arcade
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative group">
             <img
               className="block md:hidden object-cover border cursor-pointer"
               src={soccerTeam}
               alt="galerie d'images"
             />
             <img
-              className="hidden md:block object-cover border cursor-pointer"
+              className="hidden md:block object-cover border cursor-pointer transition duration-700 hover:opacity-35"
               src={soccerTeamDesktop}
               alt="galerie d'images"
             />
-            <div className="absolute bottom-0 left-0 uppercase font-thin w-full text-white p-8 text-2xl md:text-3xl">
+            <div className="absolute bottom-0 left-0 uppercase font-thin w-full text-white p-8 text-2xl md:text-3xl transition-colors duration-700 group-hover:text-black">
               <span className="flex flex-col">soccer</span>team vr
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative group">
             <img
               className="block md:hidden object-cover border cursor-pointer"
               src={gridImage}
               alt="galerie d'images"
             />
             <img
-              className="hidden md:block object-cover border cursor-pointer"
+              className="hidden md:block object-cover border cursor-pointer transition duration-700 hover:opacity-35"
               src={gridImageDesktop}
               alt="galerie d'images"
             />
-            <div className="absolute bottom-0 left-0 uppercase font-thin w-24 text-white p-8 text-2xl md:text-3xl">
+            <div className="absolute bottom-0 left-0 uppercase font-thin w-24 text-white p-8 text-2xl md:text-3xl transition-colors duration-700 group-hover:text-black">
               the grid
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative group">
             <img
               className="block md:hidden object-cover border cursor-pointer"
               src={fromAbove}
               alt="galerie d'images"
             />
             <img
-              className="hidden md:block object-cover border cursor-pointer"
+              className="hidden md:block object-cover border cursor-pointer transition duration-700 hover:opacity-35"
               src={fromAboveDesktop}
               alt="galerie d'images"
             />
-            <div className="absolute  flex-col bottom-0 left-0 uppercase font-thin w-full text-white p-8 text-2xl md:text-4xl">
+            <div className="absolute  flex-col bottom-0 left-0 uppercase font-thin w-full text-white p-8 text-2xl md:text-4xl transition-colors duration-700 group-hover:text-black">
               <span className="flex flex-col">from up</span>above vr
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative group">
             <img
               className="block md:hidden object-cover border cursor-pointer"
               src={pocketBorealis}
               alt="galerie d'images"
             />
             <img
-              className="hidden md:block object-cover border cursor-pointer"
+              className="hidden md:block object-cover border cursor-pointer transition duration-700 hover:opacity-35"
               src={pocketBorealisDesktop}
               alt="galerie d'images"
             />
-            <div className="absolute bottom-0 left-0 uppercase font-thin w-24 text-white p-8 text-2xl md:text-3xl">
+            <div className="absolute bottom-0 left-0 uppercase font-thin w-24 text-white p-8 text-2xl md:text-3xl transition-colors duration-700 group-hover:text-black">
               pocket borealis
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative group">
             <img
               className="block md:hidden object-cover border cursor-pointer"
               src={curiosity}
               alt="galerie d'images"
             />
             <img
-              className="hidden md:block object-cover border cursor-pointer"
+              className="hidden md:block object-cover border cursor-pointer transition duration-700 hover:opacity-35"
               src={curiosityDesktop}
               alt="galerie d'images"
             />
-            <div className="absolute bottom-0 left-0 uppercase font-thin w-24 text-white p-8 text-2xl md:text-3xl">
+            <div className="absolute bottom-0 left-0 uppercase font-thin w-24 text-white p-8 text-2xl md:text-3xl transition-colors duration-700 group-hover:text-black">
               the curiosity
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative group">
             <img
               className="block md:hidden object-cover mb-12 border cursor-pointer"
               src={fisheye}
               alt="galerie d'images"
             />
             <img
-              className="hidden md:block object-cover border cursor-pointer"
+              className="hidden md:block object-cover border cursor-pointer transition duration-700 hover:opacity-35"
               src={fisheyeDesktop}
               alt="galerie d'images"
             />
-            <div className="absolute flex-col bottom-0 left-0 uppercase font-thin text-white pl-8 pb-16 text-2xl md:p-8 md:text-4xl">
+            <div className="absolute flex-col bottom-0 left-0 uppercase font-thin text-white pl-8 pb-16 text-2xl md:p-8 md:text-4xl transition-colors duration-700 group-hover:text-black">
               <span className="flex flex-col">make it</span>fisheye
             </div>
           </div>
