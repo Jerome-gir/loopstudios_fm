@@ -24,7 +24,7 @@ export default function CreationsSection() {
           our creations
         </h2>
         <a href="/">
-          <button className="hidden md:block uppercase text-xl border-2 px-12 py-2 font-Alata tracking-widest mb-12 md:mb-16 ">
+          <button className="hidden md:block uppercase text-xl border-2 px-12 py-2 font-Alata tracking-widest mb-12 md:mb-16 hover:bg-black hover:text-white">
             see all
           </button>
         </a>
