@@ -33,23 +33,43 @@ export default function HeroSection() {
             alt="menu hamburger"
             onClick={() => setOpen(!open)}
           />
-          <ul className="hidden md:flex gap-10 text-xl font-Alata">
+          <nav className="hidden md:flex gap-10 text-xl font-Alata list-none">
             <a href="/">
-              <li>About</li>
+              <li className="relative group">
+                <span className="group-hover:before:scale-x-100 before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-full before:h-[2px] before:bg-white before:scale-x-0 before:origin-left before:transition-transform">
+                  About
+                </span>
+              </li>
             </a>
             <a href="/">
-              <li>Careers</li>
+              <li className="relative group">
+                <span className="group-hover:before:scale-x-100 before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-full before:h-[2px] before:bg-white before:scale-x-0 before:origin-left before:transition-transform">
+                  Careers
+                </span>
+              </li>
             </a>
             <a href="/">
-              <li>Events</li>
+              <li className="relative group">
+                <span className="group-hover:before:scale-x-100 before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-full before:h-[2px] before:bg-white before:scale-x-0 before:origin-left before:transition-transform">
+                  Events
+                </span>
+              </li>
             </a>
             <a href="/">
-              <li>Products</li>
+              <li className="relative group">
+                <span className="group-hover:before:scale-x-100 before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-full before:h-[2px] before:bg-white before:scale-x-0 before:origin-left before:transition-transform">
+                  Products
+                </span>
+              </li>
             </a>
             <a href="/">
-              <li>Support</li>
+              <li className="relative group">
+                <span className="group-hover:before:scale-x-100 before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-full before:h-[2px] before:bg-white before:scale-x-0 before:origin-left before:transition-transform">
+                  Support
+                </span>
+              </li>
             </a>
-          </ul>
+          </nav>
         </div>
         <div className="flex flex-col justify-center items-start flex-1 px-12">
           <h1 className="text-5xl border-2 font-Josefin_Sans uppercase p-6 text-left tracking-wide md:text-8xl md:h-96 md:p-12 md:border-4">
